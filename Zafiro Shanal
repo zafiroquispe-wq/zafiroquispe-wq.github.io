@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Zafiro Shantal Quispe Alache, Contabilidad, UCSP, Arequipa" />
+  <meta name="description" content="Página personal de Zafiro Shantal Quispe Alache, estudiante de Contabilidad en la Universidad Católica San Pablo (UCSP)." />
+  <title>Zafiro Shantal Quispe Alache</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #EBF2FC;
+      color: #082567;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #082567;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(8, 37, 103, 0.18);
+    }
+
+    main {
+      max-width: 900px;
+      width: 90%;
+      margin: 20px 0;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-left: 5px solid #082567;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(8, 37, 103, 0.1);
+    }
+
+    h2 {
+      color: #082567;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: #082567;
+    }
+
+    a {
+      color: #0F52BA;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #082567;
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      margin-top: 10px;
+    }
+
+    .dropdown-btn {
+      background-color: #082567;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-btn:hover {
+      background-color: #0F52BA;
+    }
+
+    .dropdown-content {
+      display: none;
+      margin-top: 10px;
+      background-color: #EBF2FC;
+      border-radius: 6px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(8, 37, 103, 0.1);
+    }
+
+    .dropdown-content a {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .show {
+      display: block;
+    }
+
+    footer {
+      background-color: #082567;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(8, 37, 103, 0.18);
+    }
+
+    footer p {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Zafiro Shantal Quispe Alache</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Biografía</h2>
+      <p>
+        Hola, mi nombre es <strong>Zafiro Shantal Quispe Alache</strong>. Tengo 22 años y vivo con mi gatito Kripto. Actualmente soy estudiante en la 
+        <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo (UCSP)</a> 
+        de Arequipa, Perú, en la carrera de 
+        <a href="https://ucsp.edu.pe/facultad-de-ciencias-economicas-y-empresariales/carrera-de-contabilidad/" target="_blank">Contabilidad</a>.
+      </p>
+    </section> 
+
+    <section id="cursos">
+      <h2>Cursos</h2>
+      <ul>
+        <li>Contabilidad de Costos I</li>
+        <li>Contabilidad de Sociedades</li>
+        <li>Introduccion a la Computacion</li>
+        <li>Matematica Financiera</li>
+      </ul>
+    </section>
+
+    <section id="docentes">
+      <h2>Perfiles de mis docentes</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/lourdes-paz-25935335?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Lourdes Paz Yañez</a></li>
+        <li><a href="https://www.linkedin.com/in/edgard-fredy-leiva-flores-a17b2aa0?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Edgard Fredy Leiva Flores</a></li>
+        <li><a href="https://www.linkedin.com/in/ecuadrosv?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Ernesto Cuadros Vargas</a></li>
+        <li><a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Rosmery Violeta Quispe Zavala</a></li>
+        <li><a href="https://www.linkedin.com/in/maría-belén-bocchio-linares-96846035?utm_source=share_via&utm_content=profile&utm_medium=member_android"target="_blank">Maria Belen Bocchio Linares</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Ver Compañeros</button>
+        <div class="dropdown-content" id="dropdown-list">
+          <a href="https://chaskacandia.github.io/chaskacandiaochoa.github.io/" target="_blank">Chaska Candia Ochoa</a>
+          <a href="https://share.google/YMpVLRhieDcryrUHv" target="_blank">Nayeli katerine Sucasaca Lope</a>
+          <a href="https://share.google/L5ElTQkiHILha5HpY" target="_blank">Marilin Shuamara Desa Ccama</a>
+          <a href="https://s-1018.github.io/Kelly-Coaguila-Quezada/" target="_blank">Kelly Sherlyn Coaguila Quezada</a>
+          <a href="https://deysi85.github.io/-Deysi-Maryori-Vargas-Salazar./" target="_blank">Vargas Salazar Deysi Maryori</a>
+          <a href="https://bris-s.github.io/trabajo/" target="_blank">Brigida Sueldo Zamora</a>
+          <a href="https://blancayamilet1.github.io/Blanca-Yamilet-Gutierrez-Llave/" target="_blank">Blanca Yamilet Gutierrez Llave</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        📧 <strong>Correo electrónico:</strong> 
+        <a href="mailto:zafiro.quispe@ucsp.edu.pe">zafiro.quispe@ucsp.edu.pe</a><br>
+        🔗 <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/zafiro-shantal-quispe-alache-09b555434/" target="_blank">Mi perfil de LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Zafiro Shantal Quispe Alache. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdown-list").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
